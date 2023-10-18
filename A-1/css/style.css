@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider{}
+.slides{} 
+.slide img{
+    display: block;
+    position: relative;
+    z-index: -1;
+} 
+.slide p{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
