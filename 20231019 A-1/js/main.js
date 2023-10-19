@@ -19,4 +19,30 @@ $(function(){
         },
         )   
 
+
+    // slider
+    // setInterval(function(){
+    //     $('.slides').animate({top:'-100%'},function(){
+    //         $('.slide').first().appendTo('.slides')
+    //         $(this).css('top,0')
+    //     })
+    // },3000)
+
+    setInterval(function(){
+        $('.slides').animate({top: '-100%'}, function(){
+            $('.slide').first().appendTo('.slides')
+            $(this).css('top', 0)
+        })
+    }, 3000)
+
+
+
+
+
+
+
+
+
 })
+
+
