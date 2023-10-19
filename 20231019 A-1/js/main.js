@@ -24,7 +24,7 @@ $(function(){
     // setInterval(function(){
     //     $('.slides').animate({top:'-100%'},function(){
     //         $('.slide').first().appendTo('.slides')
-    //         $(this).css('top,0')
+    //         $(this).css('top',0)
     //     })
     // },3000)
 
