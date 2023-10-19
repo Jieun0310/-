@@ -13,11 +13,10 @@ $(function(){
    $('.gnb').hover(
         function(){
             $(this).find('ul').stop().slideDown()
-   }),
-   $('.gnb').hover(
+        },
         function(){
             $(this).find('ul').stop().slideUp()
-   })
-    
+        },
+        )   
 
 })
