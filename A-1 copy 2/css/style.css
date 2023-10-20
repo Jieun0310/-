@@ -35,28 +35,8 @@ body{
     z-index: 1;
 }
 
-.header::after{
-    content: '';
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 0px;
-    background-color: #bebebe;
-    transition: all 0.3s;
-}
-
-.header.active::after{
-    height: 200px;
-}
-
-
-
-
 .gnb{
     display: flex;
-    position: relative;
-    z-index: 2;
 }
 
 .gnb>li {
@@ -79,6 +59,7 @@ body{
     position: absolute;
     top: 100px;
     left: 0;
+    background-color: #cecece;
     width: 100%;
 }
 
