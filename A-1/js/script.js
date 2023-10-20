@@ -1,55 +1,41 @@
-$(function(){
+$(function(){   
+    // 메뉴 
+    $('.gnb > li').hover(
+        function(){
+            $(this).find('ul').stop().slideDown()
+        },
+        function(){
+            $(this).find('ul').stop().slideUp()
+        },
+    )
 
-    // 모달
-    $('.show_modal').click(function(){
-        $('.modal').show();
-        });
+    // 슬라이드
+    setInterval(function(){
+        $('.slides').animate({top: '-100%'}, function(){
+            $('.slide').first().appendTo('.slides')
+            $(this).css('top', 0)
+        })
+    }, 3000)
 
-    $('.close_modal').click(function(){
-    $('.modal').hide();
-     });
+    // 탭
+    $('.item').eq(0).show()
 
-//     // $('.gnb').hover(function(){
-//     //     $('.gnb ul').slideDown(600);
-//     // }),
-//     // $('.gnb').hover(function(){
-//     //     $('.gnb ul').slideUp(600);
-//     // })
+    $('.titles h3').click(function(){            
+        var idx =  $(this).index()
+        
+        $('.titles h3').removeClass('active')
+        $(this).addClass('active')
 
-//     setInterval(function(){
-//         $('.slides').animate({left:'-100%'},function(){
-//             $('.slide').first().appendTo('.slides')
-//             $(this).css('top',0)
-//         })
-//     },3000)
-
-//     $('.items').eq(0).show()
-
-//     $('.titles h2').click(function(){
-//         $('.titles h2').removeClass('active')
-//         $(this).addClass('active')
-//         var index =$(this).index 
-//         console.log(index)
-
-//         $('.itmes').hide()
-//         $('.itmes').eq()
-//     })
+        $('.item').hide()
+        $('.item').eq(idx).show()       
+    })
     
-
-
-// })
-
-// $('.show_modal').click(function(){
-//     $('.modal').show();
-// });
-
-// $('.close_modal').click(function(){
-//     $('.modal').hide();
-// });
-
-// $('.gnb').hover(function(){
-//     $('.gnb ul').stop().slideDown(600);
-// }),
-// $('.gnb').hover(function(){
-//     $('.gnb ul').stop().slideUp(600);
+    // 모달
+    $('#showModal').click(function(){
+        $('.modal').show()
+    })
+    
+    $('#closeModal').click(function(){
+        $('.modal').hide()
+    })    
 })
