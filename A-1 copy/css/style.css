@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #fff;
+    color: #333;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb>li {
+    position: relative;
+    
+}
+.gnb>li>a{
+    display: block;
+    padding: 0 60px;
+    height: 100px;
+    line-height: 100px;
+    
+}
+.gnb>li>a:hover{
+    color: orangered;
+}
+
+.gnb ul{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #cecece;
+    width: 100%;
+}
+
+.gnb ul li a{
+    display: block;
+    text-align: center;
+    padding: 14px;
+}
+
+.gnb ul li a:hover{
+    background-color: #666;
+    color: #fff;
+}
+
+
+/* article */
+.slider{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+
+}
+.slides{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+} 
+
+.slide{
+    position: relative;
+}
+
+
+.slide p{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 4px 4px 1px #f7a7a7; 
+} 
+
+/* contents */
+.contents{
+    display: flex;
+    height: 200px;
+    padding: 10px 0;
+    gap: 15px;
+    
+}
+
+.contents > div{
+    width: 390px;
+    height: 180px;
+}
+
+.board .titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #d6d6d6;
+}
+
+.board .titles h2{
+    height: 46px;
+    line-height: 46px;
+    background-color: #d6d6d6;
+    width: 193px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.board .titles h2.active{
+    background-color: #f7a7a7;
+    color: #333;
+
+}
+
+.items .item2 img{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+.banner{
+    position: relative;
+    cursor: pointer;
+}
+
+.banner img{
+    display: block;
+    width: 390px;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+.banner h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #222222;
+    font-size: 32px;
+    text-shadow: 2px 2px 1px#f7a7a7;
+    
+}
+
+.direct{
+    position: relative;
+}
+
+
+.direct img{
+    display: block;
+    width: 390px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.direct h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fd4343;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 1px#f7a7a7;
+}
+
+
+
+.board .items {
+    display: none;
+    padding: 10px;
+}
+
+
+.board .items .item1 a{
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.board .items .item1 a:hover{
+    text-decoration: underline;
+}
+
+    .board .items .item2{
+    display: none;
+}
+
+.footer{
+    height: 100px;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer .sns{
+    display: flex;
+    gap: 20px;
+}
+
+.footer .sns a {
+    display: flex;
+}
+.footer .sns img{
+    display: block;
+    width: 16px;
+}
+
+.modal{
+    display: none;
+    width: 360px;
+    height: 300px;
+    padding: 20px;
+    background-color: #ececec;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #333;
+}
+
+.modal p{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+button{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    padding: 5px 5px;
+}

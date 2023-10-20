@@ -1,0 +1,12 @@
+.title{
+    font-size: 30px;
+}
+
+.title::before{
+    content: 'html';
+}
+
+
+.title::after{
+    content: 'css';
+}
