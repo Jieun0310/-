@@ -52,4 +52,21 @@ $(function(){
 // }),
 // $('.gnb').hover(function(){
 //     $('.gnb ul').stop().slideUp(600);
+
+//  gnb
+$('.gnb>li').hover(
+    function(){
+       $(this).find('ul').stop().slideDown()
+    },
+    function(){
+        $(this).find('ul').stop().slideUp()
+    }
+)
+
+
+
+
+
+
+
 })
