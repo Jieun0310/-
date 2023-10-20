@@ -55,7 +55,7 @@ body{
 }
 
 .gnb ul{
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 100px;
     left: 0;
@@ -112,7 +112,7 @@ body{
 }
 
 /* contents */
-.contents{}
+/* .contents{} */
 
 
 .content{
@@ -120,7 +120,7 @@ body{
     gap: 8px;
 }
 
-.board{}
+/* .board{} */
 
 .titles{
     display: flex;
