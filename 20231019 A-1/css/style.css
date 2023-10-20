@@ -138,19 +138,26 @@ body{
     font-size: 14px;
 }
 
-.item1 li a{
+.titles h2.active{
+    background-color: #f75858;
+    color: #333;
+
+}
+
+.item li a{
     display: flex;
     justify-content: space-between;
     padding: 5px;
 }
 
-.item2{
+.item{
     display: none;
 }
 
-.item2 li{
+.item li{
     display: inline-block;
     margin-right: 30px;
+    
 }
 
 .banner{
