@@ -10,7 +10,7 @@ $(function(){
     )
 
     // 슬라이드
-    setInterval(function(){
+    setTimeout(function(){
         $('.slides').animate({top: '-100%'}, function(){
             $('.slide').first().appendTo('.slides')
             $(this).css('top', 0)
