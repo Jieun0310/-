@@ -15,9 +15,9 @@ $(function(){
     // 슬라이드
     setInterval(
         function(){
-        $('.slides').animate({left:'-100%'},function(){
-            $('.slide').first().appendTo('.slides')
-            $(this).css('left', 0)
+        $('.slides').animate({left:'-100%'},function()
+        {('.slide').first().appendTo('.slides')
+        $(this).css('left', 0)
         })
     },3000)
 
