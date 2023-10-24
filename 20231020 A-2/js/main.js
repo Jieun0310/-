@@ -16,7 +16,7 @@ $(function(){
     setInterval(
         function(){
         $('.slides').animate({left:'-100%'},function()
-        {('.slide').first().appendTo('.slides')
+        {$('.slide').first().appendTo('.slides')
         $(this).css('left', 0)
         })
     },3000)
