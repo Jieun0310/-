@@ -17,15 +17,22 @@ body{
     background-color: #222;
     color: #F6F6F6;
     font-size: 14px;
+    
 }
 
-.wrap{}
+/* wrap */
+.wrap{
+    width: 1200px;
+    /* margin: 0 auto; */
+}
 
+/* header */
 .header{
+    position: fixed;
+    width: 100%;
     background-color: #330AE2;
     padding: 40px;
-    /* height: 100px; */
-    /* line-height: 100px; */
+    height: 100px;
     display: flex;
     align-self: center;
     justify-content: space-between;
@@ -51,4 +58,34 @@ body{
 .gnb li a:hover{
     color: #FFC925;
     font-weight: bold;
+}
+
+#home{
+    position: relative;
+    width: 100%;
+    height: 618px;
+    top: 100px;
+    z-index: -1;
+}
+
+#home #img1{
+    position: absolute;
+    display: inline-block;
+    top: 91px;
+    left: 395px;
+}
+
+#home #img2{
+    position: absolute;
+    display: inline-block;
+    top: 147px;
+    left: 463px;
+}
+
+#home p{
+    position: relative;
+    display: inline-block;
+    top: 456px;
+    left: 521px;
+    text-align: center;
 }
