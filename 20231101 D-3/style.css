@@ -225,6 +225,10 @@ body{
     padding: 5px 0;
 }
 
+.notice_list li:hover a{
+    text-decoration: underline;
+}
+
 .gellary_list{
     display: none;
 }
