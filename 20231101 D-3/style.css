@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+.container{
+    display: flex;
+}
+
+/*aside_left */
+.aside_left{
+    width: 200px;
+    background-color: #858585;
+    z-index: 1;
+}
+
+.logo{
+    margin: 20px 0;
+}
+
+.gnb{
+    padding: 10px;
+}
+.gnb >li{
+    position: relative;
+}
+
+.gnb > li:hover > a{
+    background-color: #333;
+    color: #fff;
+}
+
+.gnb > li >a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+}
+
+.gnb ul{
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: calc(100vw - 200px);
+    background-color: #dddddd;
+    display: none;
+    
+}
+
+.gnb ul li{
+    display: inline-block;
+}
+
+.gnb ul li a{
+    display: block;
+    text-align: center;
+    width: 130px;
+    padding: 0 20px;  
+    height: 50px;
+    line-height: 50px;
+}
+.gnb ul li a:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.spot_menu{
+    display: flex;
+    justify-content: center;
+}
+
+.spot_menu a{
+    padding: 20px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.spot_menu a:first-child{
+    border-right: 1px solid #333;
+}
+
+/* aside_right */
+.aside_right{
+    width: calc(100% - 200px);
+    height: 850px;
+    background-color: #b7b7b7;
+}
+
+.slider{
+    position: relative;
+    height: 400px;
+    
+}
+
+.slides{
+    position: absolute;
+    display: flex;
+}
+
+.slide{
+    position: relative;
+}
+
+.slide img{
+    display: block;
+    height: 400px;
+    width: 100vw; 
+}
+
+
+.slide h2{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;  
+}
+
+.top_banner{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.top_banner a{
+    display: block;
+    margin: 10px;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.top_banner a img{
+    display: block;
+  
+}
+.top_banner a p{
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+    color: blue;
+    
+}
+
+.big_banner{
+    height: 200px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thum img{
+    height: 180px;
+    /* width: 300px; */
+}
+
+.titles p{
+    display: block;
+    margin: 5px 0;
+    width: 800px;
+}
+
+.icon i{
+    display: block;
+    font-size: 100px;
+}
+
+.contents{
+    height: 250px;
+    padding: 10px;
+}
+
+.contents .titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #666;
+}
+
+
+.titles h2{
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #e9e9e9;
+    color: rgb(30, 30, 30);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.titles h2:active{
+    background-color: #666666;
+    color: white;
+}
+
+.notice_list{
+    padding: 20px;
+}
+
+.notice_list li a{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.gellary_list{
+    display: none;
+}
+
+.gellary_list li{
+    display: inline-block;
+    padding: 20px;
+}
+
+/* footer */
+.footer{
+    background-color: #666666;
+    display: flex;
+    height: 120px;
+}
+
+.f_logo{
+    width: 200px;
+    
+}
+
+
+.f_logo img{
+    display: block;
+    align-items: center;
+    margin-top: 45px;
+
+   
+}
+
+
+.f_list{
+    width: calc(100% - 200px);
+}
+
+
+
+.f_menu{
+    display: flex;
+    padding: 20px;
+    height: 60px;
+    gap: 20px;
+}
+
+.f_menu li:last-child a{
+    border-right: none;
+}
+
+.f_menu a{
+    padding-right: 20px;
+    border-right: 1px solid #333
+}
+
+
+
+.copyright{
+    padding: 20px;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border: 2px solid #222;
+    padding: 20px;
+}
+
+.modal p{
+    padding: 20px 0;
+}
+
+button{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
